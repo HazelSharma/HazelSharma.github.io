@@ -742,6 +742,18 @@ body.light-theme{
     margin-bottom: 1rem;
   }
 
+  .skillGroup{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4rem;
+    justify-items: center;
+  }
+
+  .skillC{
+      padding: 0 0 0 0;
+      align-self: center;
+  }
+
   .work_container{
     gap: 3rem;
   }
