@@ -62,3 +62,4 @@ Homepage screenshot:
 ![alt text](image-1.png)
 
 Repo screenshot:
+![alt text](image-2.png)
