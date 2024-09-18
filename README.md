@@ -73,6 +73,7 @@ Repo screenshot:
 
 ## Activity 4
 Places travelled section screenshot:
+![alt text](image-5.png)
 
 Repo screenshot:
 
