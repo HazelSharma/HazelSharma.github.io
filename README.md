@@ -83,3 +83,4 @@ Recent projects section screenshot:
 ![alt text](image-7.png)
 
 Repo screenshot:
+![alt text](image-8.png)
