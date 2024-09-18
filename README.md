@@ -56,3 +56,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 ## Activity 1
 Screenshot of my repo:
 ![Screenshot of my repo](image.png)
+
+## Activity 2
+Homepage screenshot:
+![alt text](image-1.png)
+
+Repo screenshot:
