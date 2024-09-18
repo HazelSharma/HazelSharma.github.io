@@ -76,6 +76,7 @@ Places travelled section screenshot:
 ![alt text](image-5.png)
 
 Repo screenshot:
+![alt text](image-6.png)
 
 ## Activity 5
 Recent projects section screenshot:
