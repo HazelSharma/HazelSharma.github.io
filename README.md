@@ -63,3 +63,20 @@ Homepage screenshot:
 
 Repo screenshot:
 ![alt text](image-2.png)
+
+## Activity 3
+Home page screenshot:
+![alt text](image-4.png)
+
+Repo screenshot:
+![alt text](image-3.png)
+
+## Activity 4
+Places travelled section screenshot:
+
+Repo screenshot:
+
+## Activity 5
+Recent projects section screenshot:
+
+Repo screenshot:
