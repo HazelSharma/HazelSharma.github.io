@@ -80,5 +80,6 @@ Repo screenshot:
 
 ## Activity 5
 Recent projects section screenshot:
+![alt text](image-7.png)
 
 Repo screenshot:

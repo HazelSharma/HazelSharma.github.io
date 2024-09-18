@@ -411,8 +411,9 @@ mean time to resolution by 10% through real time data visibility and centralizat
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
-
+        <div class="recent-projects">
+          <h5>Recent Project</h5>
+          <div class="row" id="recent">
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -435,24 +436,63 @@ mean time to resolution by 10% through real time data visibility and centralizat
                   <li>Built an SER model based on CNN and RNN architecture to identity 5 emotion classes based on speech</li>
                   <li> Used Librosa library for data processing and to extract Mel-Spectrogram and MFCC data to feed model </li>
                   <li>Evaluated model performance against SVM baseline model and achieved 60% accuracy using CNN</li>
-                  <li>Documented and presented model with a demonstration, obtaining grade of 100% for APS360 Projec</li>
+                  <li>Documented and presented model with a demonstration, obtaining grade of 100% for APS360 Project</li>
 
 
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
               </div>
             </div>
           </div>
+          </div>
+          <button id="load-more-projects">Load more</button>
+          <script>
+            const myB = document.getElementById('load-more-projects');
+            var recent = '<div class="col s12 m6 l4"> <div class="card medium"> <div class="card-image waves-effect waves-block waves-light"> <img alt="music streaming app" src="/assets/img/SER_project_pic.png" style="height: 100%; width: 100%" class="activator" /> </div> <div class="card-content"> <span class="card-title activator teal-text hoverline">Speech Emotion Recognition AI Model (SER)<i class="mdi-navigation-more-vert right"></i></span> <p> </p> </div> <div class="card-reveal">   <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span> <ul> <li><b>Tools:</b> Python, NumPy, Librosa, Pandas, Torch, Google Notebooks</li> <li>Built an SER model based on CNN and RNN architecture to identity 5 emotion classes based on speech</li> <li> Used Librosa library for data processing and to extract Mel-Spectrogram and MFCC data to feed model </li> <li>Evaluated model performance against SVM baseline model and achieved 60% accuracy using CNN</li> <li>Documented and presented model with a demonstration, obtaining grade of 100% for APS360 Project</li> </ul> </div> </div> </div>';
+            document.getElementById("recent").innerHTML = recent;  
+            myB.addEventListener('click', function(){
+              const myP = document.getElementsByClassName('all-projects');
 
+              for (let i = 0; i < myP.length; i++){
+                if (myP[i].style.display == "none"){
+                  myP[i].style.display = "block";
+                }
+                else{
+                  myP[i].style.display = "none";
+                }
+              }
+            })
+          </script>
+        </div>
+
+        <div class="row"  id="parentProject">
+        
+          <div class="col s12 m6 l4 all-projects" style="display: none;">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="https://www.india.com/wp-content/uploads/2018/08/world.jpg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">GIS Mapping System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                 
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> C++, EZGL Library, Glade, GTKWidgets, OpenStreetMap Database API</li>
+                  <li>A Geographic Information System that displays maps and their relevant information (streets, POIs, etc)</li>
+                  <li>Features: light/dark mode button, visualize fastest route from point A to B with text directions pop-up</li>
+                  <li>Implemented Dijkstra and Greedy algorithms to solve traveling salesman problem within fast load times</li>
+                  <li>Ran unit tests and Netbeans GDB debugger for testing and Valgrind tests for memory leak checks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           
           <!-- ************* -->
         </div>
